@@ -1,0 +1,205 @@
+body,
+h1,
+h2,
+p,
+nav a,
+footer p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-heading {
+  background: linear-gradient(to right, #1465bd, #01162c);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.page-heading h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.page-heading p {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+article {
+  flex: 1;
+  padding: 20px;
+}
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #080808;
+  margin-top: 20px;
+}
+
+.image-overlay-container {
+  position: relative;
+}
+
+.article-image {
+  width: 100%;
+  display: block;
+}
+
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px;
+}
+
+.title-overlay h2,
+.title-overlay p {
+  margin: 0;
+}
+
+.title h2,
+.title p {
+  color: red;
+  margin: 0;
+}
+.title h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1em;
+}
+
+.title p {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+}
+aside {
+  width: 250px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+aside {
+  width: 250px;
+  padding: 20px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+aside h2 {
+  color: #0056b3;
+}
+
+aside a {
+  color: #007bff;
+  text-decoration: none;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust breakpoint as necessary */
+  main {
+    flex-direction: column;
+    max-width: none;
+  }
+
+  article,
+  aside {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-overlay-container {
+    position: relative;
+  }
+
+  .article-image {
+    width: 100%;
+  }
+
+  .title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+}
+.fab {
+  margin-right: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: rgb(192, 192, 192);
+}
+
+/* Flexbox for aligning items */
+nav,
+main,
+aside ul,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  align-self: flex-start;
+}
+
+.align-right {
+  align-self: flex-end;
+}
+
+/* FontAwesome Icons */
+.fab.fa-facebook {
+  color: #3b5998;
+}
+
+.fab.fa-twitter {
+  color: #1da1f2;
+}
+
+.fab.fa-instagram {
+  color: #e4405f;
+}
